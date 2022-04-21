@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>details</title>
+<script>
+    function passvalues(){
+        var textt=document.getElementById("name").value;
+        localStorage.setItem("textvalue",textt);
+        return false;
+    }
+</script>
+</head>
+<body bgcolor="pink">
+     <h1><center><b>FILL YOUR DETAILS</b></center></h1>
+     <form action="details.html">
+         <label>select image</label>
+         <input type="file" name="image" accept="image /*" id="image">
+         <input type="submit" name="upload image"><br/><br></br>
+        <label><b>NAME:</b></label>&nbsp;
+        <input type="text" name="name" id="name" ><br/></br></br>
+       
+        <label for="birthday">DATE OF BIRTH:</label>
+        <input type="date" id="birthday" name="birthday"><br/></br></br>
+         <label><b>ADDRESS:</b></label>
+             <input type="textarea" name="address"><br/></br></br>
+             <label><b>PHONENUMBER:</b></label>
+             <input type="number" name="PHONENUMBER"><br/></br></br>
+             
+    </form>
+    
+</body>
+</html>
